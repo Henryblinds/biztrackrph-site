@@ -70,10 +70,6 @@
     font-size: 19px;
     margin: 0 0 14px;
   }
-  h3 {
-    font-size: 15px;
-    margin: 18px 0 6px;
-  }
   p { margin: 10px 0; }
   ol, ul { padding-left: 22px; margin: 10px 0; }
   ol li, ul li { margin-bottom: 8px; }
@@ -129,10 +125,10 @@
         the package <code>com.hbl.biztrackrph</code>.
       </p>
       <p>
-        BizTrackrPH is <strong>local-first</strong>: by default your business
-        data stays on your device. Some optional features — cloud sync, multi-user
-        accounts, analytics, and purchases — involve third-party services as
-        described below.
+        BizTrackrPH is a <strong>local-first</strong> app: your business data
+        stays on your device. A few optional features — analytics, crash
+        reporting, and purchases — involve the third-party services described
+        below.
       </p>
     </div>
 
@@ -150,50 +146,15 @@
         <li>App settings, PIN, and encrypted backups you create</li>
       </ul>
       <p>
-        Unless you turn on <strong>Cloud Sync</strong> (see section 2), this data
-        is <strong>not uploaded to us or any third party</strong>. It remains on
-        your device until you delete it or uninstall the app.
+        This data is <strong>not uploaded to us or any third party</strong>. It
+        remains on your device until you delete it or uninstall the app. Any
+        backup files you export are saved to the location you choose and stay
+        under your control.
       </p>
     </div>
 
     <div class="card">
-      <h2>2. Optional Cloud Sync &amp; multi-user accounts</h2>
-      <p>
-        BizTrackrPH offers an optional Cloud Sync feature that lets you back up
-        your store to the cloud and share it across multiple devices and staff
-        members. <strong>This feature is off until you choose to use it</strong>
-        by creating a store (owner) or joining a store with a code (staff).
-      </p>
-      <h3>What is uploaded when Cloud Sync is enabled</h3>
-      <p>
-        When you create or join a store, the following data for that store is
-        synced to our cloud backend so it can be shared across authorized devices:
-        products, categories, stock levels, sales records, and store profile.
-        Product images may also be synced.
-      </p>
-      <h3>Accounts</h3>
-      <p>
-        To use Cloud Sync you create an account using an <strong>email address
-        and password</strong>. We use this to authenticate you, associate you
-        with your store, and manage Owner/Staff roles. A confirmation email is
-        sent to verify your address.
-      </p>
-      <h3>Who we use</h3>
-      <p>
-        Cloud Sync, accounts, and the store database are provided by
-        <strong>Supabase</strong>, which hosts the data and handles
-        authentication on our behalf. Data is protected by access rules so that
-        only members of your store can read or write that store's data. See
-        <a href="https://supabase.com/privacy" target="_blank" rel="noopener">Supabase's privacy policy</a>.
-      </p>
-      <p class="muted">
-        If you never enable Cloud Sync, no business data and no account email
-        leave your device through this feature.
-      </p>
-    </div>
-
-    <div class="card">
-      <h2>3. Analytics, crash reporting &amp; notifications</h2>
+      <h2>2. Analytics, crash reporting &amp; notifications</h2>
       <p>
         To keep the app stable and improve it, we use <strong>Google Firebase</strong>
         to collect a limited amount of technical data:
@@ -212,7 +173,7 @@
     </div>
 
     <div class="card">
-      <h2>4. Purchases (BizTrackrPH Pro)</h2>
+      <h2>3. Purchases (BizTrackrPH Pro)</h2>
       <p>
         BizTrackrPH offers an optional paid "Pro" upgrade. Purchases are
         processed by <strong>Google Play Billing</strong>. We receive
@@ -224,22 +185,21 @@
     </div>
 
     <div class="card">
-      <h2>5. Device permissions</h2>
+      <h2>4. Device permissions</h2>
       <table>
         <tr><th>Permission</th><th>Why it is used</th></tr>
-        <tr><td>Camera</td><td>Scan product barcodes and take product photos. Images are stored on your device (and synced only if Cloud Sync is on).</td></tr>
+        <tr><td>Camera</td><td>Scan product barcodes and take product photos. Images are stored on your device.</td></tr>
         <tr><td>Photos / storage</td><td>Attach product images and save backups, receipts, and PDF reports that you generate.</td></tr>
-        <tr><td>Notifications</td><td>Show app notifications (requires the push token described in section 3).</td></tr>
-        <tr><td>Internet</td><td>Cloud Sync, analytics, crash reporting, purchases, and in-app updates.</td></tr>
+        <tr><td>Notifications</td><td>Show app notifications (requires the push token described in section 2).</td></tr>
+        <tr><td>Internet</td><td>Analytics, crash reporting, purchases, and in-app updates.</td></tr>
         <tr><td>Biometric</td><td>Optional biometric unlock for the app lock. Biometric data never leaves your device and is handled by the operating system.</td></tr>
       </table>
     </div>
 
     <div class="card">
-      <h2>6. How we use information</h2>
+      <h2>5. How we use information</h2>
       <ul>
         <li>To provide the app's core features on your device.</li>
-        <li>To sync and share your store across devices when you enable Cloud Sync.</li>
         <li>To keep the app stable and fix bugs (crash and usage data).</li>
         <li>To process and validate Pro purchases.</li>
       </ul>
@@ -251,18 +211,17 @@
     </div>
 
     <div class="card">
-      <h2>7. Data retention &amp; deletion</h2>
+      <h2>6. Data retention &amp; deletion</h2>
       <p>You can delete your data at any time:</p>
       <ul>
         <li><strong>On-device data:</strong> use <em>Settings → Danger Zone → Erase all data</em>, or uninstall the app.</li>
-        <li><strong>Cloud Sync data &amp; account:</strong> request deletion of your account and your store's cloud data by emailing us (see section 10). We process deletion requests within <strong>30 days</strong>.</li>
         <li><strong>Analytics / crash data:</strong> see the
           <a href="index.html">Data Deletion Request</a> page for details.</li>
       </ul>
     </div>
 
     <div class="card">
-      <h2>8. Children</h2>
+      <h2>7. Children</h2>
       <p>
         BizTrackrPH is intended for business owners and staff and is not directed
         at children. We do not knowingly collect personal information from
@@ -271,7 +230,7 @@
     </div>
 
     <div class="card">
-      <h2>9. Changes to this policy</h2>
+      <h2>8. Changes to this policy</h2>
       <p>
         We may update this Privacy Policy from time to time. When we do, we will
         revise the "Last updated" date above. Significant changes may also be
@@ -280,7 +239,7 @@
     </div>
 
     <div class="card">
-      <h2>10. Contact us</h2>
+      <h2>9. Contact us</h2>
       <p>
         For any privacy question or a data-deletion request, email us at
         <a href="mailto:hbabydev09@gmail.com">hbabydev09@gmail.com</a>.
